@@ -1,0 +1,30 @@
+.character {
+    width: 400px;
+    padding: 24px;
+    margin: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 0 0 20px rgba(3, 255, 150, 0.15);
+    border-radius: 10px;
+}
+.character_title{
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+.character_option:hover {
+    cursor: pointer;
+}
+.character_option-selected .character_option-fill{
+    background: violet;
+}
+.character_option-fill{
+    width: 50%;
+    height: 5px;
+    background:blueviolet;
+}
+.character_option-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    font-size: 0.85rem;
+}
