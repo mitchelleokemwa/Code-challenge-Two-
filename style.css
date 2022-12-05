@@ -1,30 +1,87 @@
-.character {
-    width: 400px;
-    padding: 24px;
-    margin: 50px;
-    font-family: 'Courier New', Courier, monospace;
-    box-shadow: 0 0 20px rgba(3, 255, 150, 0.15);
-    border-radius: 10px;
+body{
+    background-color: rgb(37, 25, 139);
+    background-image: url(/images/img2.jpeg);
+​
 }
-.character_title{
-    font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 24px;
-}
-.character_option:hover {
+​
+p{
     cursor: pointer;
+     font-size: 20px;
+    text-align: justify;
+    color: black
+   
 }
-.character_option-selected .character_option-fill{
-    background: violet;
+​
+p:hover {
+    background-color: rgb(0, 153, 255);
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+ p:active {
+    background-color: #045aaa;
+    color: white;
+ }
+h1, h2{
+    color: #4c63af;
+    text-align: center;
 }
-.character_option-fill{
-    width: 50%;
-    height: 5px;
-    background:blueviolet;
+​
+table{
+    border: 3px solid;
+    width: 100%;
+     text-align: center;
+  }
+​
+  th{
+    height: 80%; 
+  } 
+​
+.main{
+   display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    border-style: round;
+    
+    
 }
-.character_option-info {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem 0;
-    font-size: 0.85rem;
+/* #char{
+    border: 5px outset red;
+  background-color: lightblue;    
+  text-align: center;
+} */
+​
+#main{
+    font-size: 20px;
 }
+​
+#charvotes, #reset{
+        transition-duration: 0.4s; 
+        border-radius: 10px;
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+       
+    }
+    #charvotes:hover {
+        background-color: #4c66af;
+        color: white;
+      }
+      #reset:hover {
+        background-color: rgb(55, 43, 226);
+        color: white;
+      }
+​
+      .card{
+        background: blue);
+        border-radius: 15px;
+        
+      
+        
+    }
