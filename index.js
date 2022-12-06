@@ -41,7 +41,7 @@ function getOneChar(characters){
         btn2.addEventListener('click', () => {
             characters.votes = 0
             btn.textContent = `Votes: ${characters.votes}`
-            resetVotes(characters)
+            // resetVotes(characters)
             // btn.textContent = `Votes: ${characters.votes}`
     })
 }
