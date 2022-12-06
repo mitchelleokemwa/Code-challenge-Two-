@@ -29,13 +29,14 @@ function getOneChar(characters){
     document.getElementById("charname").textContent = characters.name
     document.getElementById("charimg").src = characters.image
     document.getElementById("charvotes").textContent = `Votes cast: ${characters.votes}`
+
     let btn = document.getElementById("charvotes")
     btn.textContent = `Votes: ${characters.votes}`
     btn.addEventListener('click', () => {
         characters.votes+=1
         btn.textContent = `Votes: ${characters.votes}`
     })
-        let btn2 = document.getElementById("reset")
+        let btn2 = document.getElementById("reset-btn")
         // btn2.textContent = `Votes: ${characters.votes}`
         btn2.addEventListener('click', () => {
             characters.votes = 0
@@ -43,26 +44,4 @@ function getOneChar(characters){
             resetVotes(characters)
             // btn.textContent = `Votes: ${characters.votes}`
     })
-}
-// function updateVotes(characters){
-//     fetch(`http://localhost:3000/characters/${characters.id}`, {
-//         method:'PATCH',
-//         headers:{
-//             'Content-type': 'application/json'
-//         },
-//         body: JSON.stringify(characters)
-//     })
-//     .then(res => res.json())
-//     .then(characters => console.log(characters))
-// }
-function resetVotes(characters){
-    fetch(`http://localhost:3000/characters/${characters.id}`, {
-        method:'PATCH',
-        headers:{
-            'Content-type': 'application/json'
-        },
-        body: JSON.stringify(characters)
-    })
-    .then(res => res.json())
-    .then(characters => console.log(characters))
 }
